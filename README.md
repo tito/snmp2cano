@@ -24,17 +24,18 @@ with root permission:
 
 Create a configuration file named "/etc/snmp2canopsis.conf":
 
-    [snmp]
-    ip = 127.0.0.1
-    port = 162
+	[snmp]
+	ip = 127.0.0.1
+	port = 162
 
-    [amqp]
-    host = localhost
-    port = 5672
-    user = guest
-    password = guest
-    vhost = amqp
-    exchange = amqp.events
+	[amqp]
+	host = localhost
+	port = 5672
+	user = cpsrabbit
+	password = canopsis
+	vhost = canopsis
+	exchange = canopsis.snmp
+
 
 Then you can start with a predefined configuration:
 
